@@ -1,0 +1,10 @@
+html
+  head
+    title Kobayasi Tabel
+  body
+    h1 Kobayasi Tabel
+    = form_tag search_path, :method => 'post' do
+      p = text_field_tag :search, params[:search]
+      = submit_tag '食べれる？', :name => nil
+    p
+      = link_to 'メニュー登録', menus_path

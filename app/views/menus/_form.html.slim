@@ -1,0 +1,15 @@
+= form_for @menu do |f|
+  - if @menu.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@menu.errors.count, "error")} prohibited this menu from being saved:"
+      ul
+        - @menu.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :can_eat
+    = f.check_box :can_eat
+  .actions = f.submit

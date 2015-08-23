@@ -1,0 +1,18 @@
+html
+  head
+    title Search Result
+  body
+    - if @menu
+      - if @menu.can_eat
+        h1
+          = @menuname 
+          | は食べられるらしいです。
+      - else
+        h1
+          = @menuname
+          | は食べられないそうです。
+    - else
+      h1 
+        = @menuname
+        | は食べられるかわかりません。
+    = link_to '他にも聞いてみる', root_path

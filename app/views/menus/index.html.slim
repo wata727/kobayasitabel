@@ -1,0 +1,23 @@
+h1 Listing menus
+
+table
+  thead
+    tr
+      th Name
+      th Can_eat
+      th
+      th
+      th
+
+  tbody
+    - @menus.each do |menu|
+      tr
+        td = menu.name
+        td = menu.can_eat
+        td = link_to 'Show', menu
+        td = link_to 'Edit', edit_menu_path(menu)
+        td = link_to 'Destroy', menu, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Menu', new_menu_path
