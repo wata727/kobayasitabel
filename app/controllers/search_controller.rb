@@ -5,6 +5,10 @@ class SearchController < ApplicationController
   def search
     @menuname = params[:search]
     @menu = Menu.where(:name => params[:search]).first
+    respond_to do |format|
+      format.html
+      format.json { render json: @menu }
+    end
   end
 
   private
