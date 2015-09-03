@@ -4,9 +4,10 @@ html
     = stylesheet_link_tag "search", media: "all"
   body
     h1 Kobayasi Tabel
-    = form_tag search_path, :method => 'post' do
-      div class="form-group"
-        = text_field_tag :search, params[:search], :class => "form-control"
-      = submit_tag '食べれる？', :name => nil, :class => "btn btn-primary btn-lg"
-    p
-      = link_to 'メニュー登録', menus_path
+    div id="search"
+/    = form_tag search_path, :method => 'post' do
+/      div class="form-group"
+/        = text_field_tag :search, params[:search], :class => "form-control"
+/      = submit_tag '食べれる？', :name => nil, :class => "btn btn-primary btn-lg"
+/    p
+/      = link_to 'メニュー登録', menus_path
