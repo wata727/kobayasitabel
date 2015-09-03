@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'slim-rails'
 gem 'bootstrap-material-design'
+gem 'react-rails'
 
 group :development, :test do
   gem 'sqlite3'
