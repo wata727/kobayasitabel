@@ -3,12 +3,13 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 5em;
   font-weight: bold;
+  line-height: 1em;
 }
 
 .form-group {
-  margin: 100px 0px 50px 0px;
+  margin: 10em 0em 5em 0em;
   text-align: center;
 }
 
@@ -19,7 +20,7 @@ input#search {
 }
 
 input.btn.btn-primary.btn-lg {
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .result {
